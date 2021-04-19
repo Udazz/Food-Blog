@@ -1,0 +1,244 @@
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+*{
+    box-sizing: border-box;
+}
+h1,h4,h5{
+    margin: 0;
+
+}
+.image_responsive{
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.bg_dark{
+    background-color: #221212;
+    
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #221212;
+}
+
+.navbar li{
+
+    display: inline-block;
+}
+
+.navbar li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 25px 20px;
+    font-size: 13px;
+    color: #f4511e;
+    letter-spacing: 2px;
+}
+
+.hero_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.75)) ,url(../Images/dwbg2.jpg); /* #f4511e  for orage them change rgba and put the color twice*/ 
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.hero_text{
+    text-transform: uppercase;
+    color: white;
+    text-align: center; 
+}
+
+.hero_text h1{
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.hero_text p{
+    letter-spacing: 5px;
+    
+}
+.btn_dark{
+    background-color: #f4511e;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.4s;
+}
+
+.btn_dark:hover{
+    background-color: white;
+    color: #f4511e;
+}
+
+
+  /* recipe section */
+
+.recipe_section{
+    padding: 70px 0px;
+}
+
+.image_wrapper{
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background: rgba(0, 0, 0, 0.034);
+    overflow: hidden;
+    border-radius: 2px;   
+}
+.image_wrapper img{ 
+   
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.4s;
+}
+.image_wrapper:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.image_text{
+    height: 150px;
+    padding: 0px 15px;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+   
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.image_text h5{
+    color: #f4511e;
+    font-size: 20px;
+    font-weight: 500;  
+}
+.image_text p{
+    color: white;
+    line-height: 26px;
+}
+
+     /* About Section */
+
+.about_section{
+    margin-top: 40px;
+    padding: 70px 0px;
+    background-color: #f4511e;
+    color: white;
+    height: 370px;
+}
+
+.about_section h4{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.about_section p{
+    line-height: 32px;
+}
+.image_background{
+    position: relative;
+    z-index: 1;               /*    1 which come in backend the black part*/
+}
+.image_background::before{           /* it create the effacet before method */
+    position: absolute;           
+    top: -35px;              /*     for the special effect in picture  */
+    left: -40px;
+    content: "";
+    width: 100%;
+    height: 100%;
+     z-index: -1;               /* the picture comes in front*/
+    background-color: black;
+}
+.image_background{
+    box-shadow: rgba(0, 0, 0, 0.34);
+}
+    /* Extra section */
+
+.extra_section{
+    margin: 80px 0px;
+
+}
+.extra_section h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+.btn_light{
+    
+    text-decoration: none;
+    background:#f4511e;
+    padding: 15px 15px;
+    border-radius: 100px;
+    color: #221212;
+    transition: all 0.4s;
+    letter-spacing: 2px;
+}
+
+.btn_light:hover{
+    background:white;
+    color:#f4511e;
+}
+#mar{
+    width: 350px;
+    margin-top: 2px;
+    height: 228px;
+}
+#spp{
+    margin-top: 0px;
+}
+#img1{
+    height: 228px;
+    margin-top: 2px;
+}
+#img2{
+    height: 228px;
+    margin-top: 2px;
+}
+#img3{
+    height: 228px;
+    margin-top: 2px;
+}
+#img{
+    height: 228px;
+    margin-top: 2px;
+}
+
+
+      /* extra section  */
+
+.subscribe_section{
+    padding: 70px 0px;
+    background-color:#221212;
+    margin-top: 0px;
+    
+}
+
+.subscribe_section form{
+    display: flex;
+   
+}
+
+.subscribe_section button{
+    background-color: #f4511e;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
